@@ -1,8 +1,6 @@
 # SEO
-seo:
-  title: Let's Test Jekyll
-  description: Testing out Jekyll with Netlify CMS.
-
+title: "Let's Test Jekyll"
+description: "Testing out Jekyll with Netlify CMS."
 
 # Footer data
 address: "Written by Jon Doe.<br>

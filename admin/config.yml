@@ -21,7 +21,7 @@ collections:
             widget: "string"
           - label: "About page data"
             name: "about"
-            widget: "string"
+            widget: "markdown"
           - label: "Address"
             name: "address"
             widget: "string"
