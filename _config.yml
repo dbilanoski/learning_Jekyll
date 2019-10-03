@@ -4,10 +4,6 @@
 
 # jekyll serve --watch --baseurl ""
 
-# Site parameters
-title: Testiramo Jekyll
-description: Testiramo Jekyll kao potencijalu platformu za davidov sajt. Ako prođe dobro, Boolab je idući.
-
 # Enviroment parametrs
 markdown: kramdown
 baseurl: ""
