@@ -10,7 +10,7 @@ description: Testiramo Jekyll kao potencijalu platformu za davidov sajt. Ako pro
 
 # Enviroment parametrs
 markdown: kramdown
-baseurl: "/learning_Jekyll"
+baseurl: ""
 
 # Exclusion list
 exclude: [".gitignore"]
