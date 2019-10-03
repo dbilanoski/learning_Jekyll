@@ -2,16 +2,18 @@
 # https://www.youtube.com/watch?v=F1UplpQ055Y&list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-&index=31
 # https://www.youtube.com/watch?v=a_93h05ntCo&list=PLWjCJDeWfDdcU8zbZZrr6L1zpf_2Eqt_w&index=12
 
+# jekyll serve --watch --baseurl ""
+
 # Site parameters
 title: Testiramo Jekyll
 description: Testiramo Jekyll kao potencijalu platformu za davidov sajt. Ako prođe dobro, Boolab je idući.
 
 # Enviroment parametrs
 markdown: kramdown
-baseurl: ""
+baseurl: "/learning_Jekyll"
 
 # Exclusion list
-exclude: []
+exclude: [".gitignore"]
 
 # Collections
 collections:
