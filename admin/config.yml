@@ -5,7 +5,7 @@ backend:
 media_folder: "assets/img/uploads"
 
 # Netlify CMS access definitions
-colllections: 
+collections: 
   - name: "website-settings"
     label: "Website settings"
     files:
