@@ -19,3 +19,18 @@ collections:
           - label: "Description"
             name: "description"
             widget: "string"
+      - label: "About Page"
+        name: "about-page"
+        file: "_data/site-data.yml"  
+        fields: 
+          - label: "About page content"
+            name: "about-data"
+            widget: "string"
+       - label: "Footer Page"
+        name: "footer-data"
+        file: "_data/site-data.yml"  
+        fields: 
+          - label: "Address"
+            name: "address"
+            widget: "string"
+        
