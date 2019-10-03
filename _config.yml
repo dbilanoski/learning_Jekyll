@@ -1,0 +1,20 @@
+# https://www.youtube.com/watch?v=Ub7Xs7oFsVc&list=PLygcmZoi1k1CRU9pQ3SZPTkE-KFEe1ANh&index=12
+# https://www.youtube.com/watch?v=F1UplpQ055Y&list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-&index=31
+# https://www.youtube.com/watch?v=a_93h05ntCo&list=PLWjCJDeWfDdcU8zbZZrr6L1zpf_2Eqt_w&index=12
+
+# Site parameters
+title: Testiramo Jekyll
+description: Testiramo Jekyll kao potencijalu platformu za davidov sajt. Ako prođe dobro, Boolab je idući.
+
+# Enviroment parametrs
+markdown: kramdown
+baseurl: ""
+
+# Exclusion list
+exclude: []
+
+# Collections
+collections:
+  messages:
+    output: true
+  

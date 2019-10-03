@@ -1,0 +1,14 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+/* Color Scheme */
+:root {
+  --white_lighter: #e8ecf7;
+  --white_darker: #dce0ea;
+  --grey: #474747;
+  --black: #11151c;
+
+  --red: #b2353f;
+  --green: #23ce6b;
+
+}

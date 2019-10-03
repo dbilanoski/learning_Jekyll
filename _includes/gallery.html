@@ -1,0 +1,46 @@
+<div class="gallery flex-row flex-centered">
+  {% comment %} Count gallery items {% endcomment %}
+  
+  {% assign gallerySize = 0 %}
+  {% for item in site.static_files %}
+    {% if item.path contains include.folder %}
+      {% assign gallerySize = gallerySize | plus:1 %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} 
+  Loop through gallery to render images if image:
+    * is in the right folder (one defined while calling this include)
+    * has some form of a .jpg extention
+  {% endcomment %}
+
+  {% for item in site.static_files %}
+    {% if item.path contains include.folder %}
+      {% if item.extname == ".jpg" or
+        item.extname == ".jpeg" or
+        item.extname == ".JPG" or
+        item.extname == ".JPEG"      
+      %}
+
+      {% comment %} Create file name for images title {% endcomment %}
+      {% assign itemNameParts = item.path | split: "/" %}
+      {% assign itemName = itemNameParts | last | replace: item.extname, "" %}
+      <a 
+        href="{{ item.path }}" 
+        title="{{ itemName }}"
+        class="{% if gallerySize < 3 %}
+          col-12
+        {% elsif gallerySize >= 3 and gallerySize < 5 %}
+          col-6 
+        {% elsif gallerySize >= 5 and gallerySize < 9 %}
+          col-4
+        {% elsif gallerySize >= 9 %}
+          col-3
+        {% endif %}
+        ">
+         <img src="{{ item.path }}" alt="">
+      </a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>

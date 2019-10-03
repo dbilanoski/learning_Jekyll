@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="wrapper">
+  <h1>Messages</h1>
+  <div class="messages">
+    <ul>
+      {% for message in site.messages %}
+        <li>
+          <a href="{{ message.url }}">{{ message.title }}</a>
+          <p>{{ message.description }}</p>
+          <small>{{ message.messageDate }}</small>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
