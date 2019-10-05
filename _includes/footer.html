@@ -1,9 +1,9 @@
 <footer class="mg-top_2">
   <div class="flex-row flex-centered wrapper">
-    <div class="footer-info col-4">
+    <div class="footer-info col-3">
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quas neque dignissimos. Atque, excepturi doloremque.</p>
     </div>
-    <div class="footer-navigation col-4">
+    <div class="footer-navigation col-3">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -11,8 +11,16 @@
           </ul>
 
     </div>
-    <address class="footer-contact_data col-4">
-        {{ site.data.site-data.address }}
+    <address class="footer-contact_data col-3">
+        {{ site.data.site-data.address.author }}</br> 
+        {{ site.data.site-data.address.street-address }}</br>
+        {{ site.data.site-data.address.locality }}</br>
+        {{ site.data.site-data.address.country }}
     </address>
+    <div class="footer-contact_data col-3">
+      <p>Contact</p>
+      <a href="tel:{{ site.data.site-data.contact-data.url-phone }}">{{ site.data.site-data.contact-data.display-phone }}</a> 
+      <a href="{{ site.data.site-data.contact-data.web }}">{{ site.data.site-data.contact-data.web }}</a>
+    </div>
   </div>
 </footer>

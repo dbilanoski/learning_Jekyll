@@ -1,3 +1,5 @@
+# https://kind-jepsen-127abc.netlify.com/
+
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
@@ -19,6 +21,40 @@ collections:
           - label: "Description"
             name: "description"
             widget: "string"
+          - label: "Footer address"
+            name: "address"
+            widget: "object"
+              - label: "Author"
+                name: "author"
+                widget: "string"
+              - label: "Street Address"
+                name: "street-address"
+                widget: "string"
+              - label: "City, State"
+                name: "localily"
+                widget: "string"
+              - label: "Country"
+                name: "country"
+                widget: "string"
+            - label: "Footer Contact Data"
+              name: "contact-data"
+              widget: "object"
+                - label: "Short phone number"
+                  name: "display-phone"
+                  widget: "string"
+                - label: "Full phone number"
+                  name: "url-phone"
+                  widget: "string"
+                - label: "Web Address"
+                  name: "web"
+                  widget: "string"
+  - label: "About Page settings"
+    name: "about-data"
+    files:
+      - label: "About Page data"
+        name: "about-data"
+        file: "_data/about-data.yml"
+        fields: 
           - label: "About page data"
             name: "about"
             widget: "markdown"

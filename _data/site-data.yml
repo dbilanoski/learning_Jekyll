@@ -1,24 +1,14 @@
+# SEO
 title: Let's Test Jekyll
 description: Testing out Jekyll with Netlify CMS.
-about: >-
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quae
-  repudiandae pariatur qui magni, ullam adipisci fugiat maiores. 
 
-
-  Molestias voluptas fugiat laborum atque, magnam, assumenda harum iure minus
-  sed modi tempore. Nulla sequi odit earum qui totam ducimus unde distinctio
-  quidem nesciunt architecto quaerat similique quam dolores, saepe, dicta
-  tempora
-
-
-  **Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim quae
-  repudiandae pariatur qui magni, ullam adipisci fugiat maiores.** 
-
-
-  Molestias voluptas fugiat laborum atque, magnam, assumenda harum iure minus
-  sed modi tempore. Nulla sequi odit earum qui totam ducimus unde distinctio
-  quidem nesciunt architecto quaerat similique quam dolores, saepe, dicta
-  tempora
-address: >-
-  Written by Jon Doe.<br> Visit us at: blablabla.bla<br> Example.com<br> Box
-  564, Disneyland<br> USA
+# FOOTER
+address:
+  author: "John Doe" 
+  street-address: "7292 Dictum Av."
+  locality: "San Antonio MI 47096"
+  country: "USA"
+contact-data:
+  display-phone: "(492) 709-6392"
+  url-phone: "+124927096392"
+  web: "www.learnjekyll.example"
