@@ -2,7 +2,7 @@
 layout: message
 title: Message 02
 description: Second message here on Jakyll platform
-messageDate: September, 2019
+message-date: September, 2019
 category: blog, news
 ---
 # Second message here on Jekyl

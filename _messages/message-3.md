@@ -2,7 +2,7 @@
 layout: message
 title: Message 03
 description: Third message here on Jakyll platform
-messageDate: September, 2019
+message-date: September, 2019
 category: blog, news
 ---
 # Third message here on Jekyl

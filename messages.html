@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="wrapper">
   <h1>Messages</h1>
   <div class="messages">
@@ -9,7 +10,27 @@ layout: default
         <li>
           <a href="{{ message.url }}">{{ message.title }}</a>
           <p>{{ message.description }}</p>
-          <small>{{ message.message-date }}</small>
+          <small>
+            {% comment %}
+            Here we adjust month names to locale, Croatian.
+            {% endcomment %}
+            {% assign m = message.message-date | date: "%-m" %}
+            {{ message.message-date | date: "%-d" }}. 
+            {% case m %}
+              {% when '1' %}siječnja
+              {% when '2' %}veljače
+              {% when '3' %}ožujka
+              {% when '4' %}travnja
+              {% when '5' %}svibnja
+              {% when '6' %}lipnja
+              {% when '7' %}srpnja
+              {% when '8' %}kolovoza
+              {% when '9' %}rujna
+              {% when '10' %}listopada
+              {% when '11' %}studenog
+              {% when '12' %}prosinca
+            {% endcase %}
+            {{ message.message-date | date: "%Y" }}.</small>
         </li>
       {% endfor %}
     </ul>
