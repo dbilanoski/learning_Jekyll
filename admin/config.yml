@@ -69,6 +69,7 @@ collections:
       - label: "Layout"
         name: "layout"
         widget: "hidden"
+        default: "message"
       - label: "Message Title"
         name: "title"
         widget: "string"
