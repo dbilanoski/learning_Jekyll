@@ -2,7 +2,7 @@
 layout: message
 title: Message 01
 description: First message here on Jakyll platform
-messageDate: September, 2019
+message-date: September, 2019
 category: [blog, news]
 ---
 # First message here on Jekyl
