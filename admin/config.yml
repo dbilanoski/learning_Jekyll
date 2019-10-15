@@ -21,6 +21,12 @@ collections:
           - label: "Description"
             name: "description"
             widget: "string"
+          - label: "Hero banner descritpion"
+            name: "hero-description"
+            widget: "string"
+          - label: "Hero banner background image"
+            name: "hero-image-url"
+            widget: "image"
           - label: "Footer address"
             name: "address"
             widget: "object"
@@ -50,6 +56,7 @@ collections:
               - label: "Web Address"
                 name: "web"
                 widget: "string"
+                
   - label: "About Page settings"
     name: "about-data"
     files:
@@ -58,8 +65,51 @@ collections:
         file: "_data/about-data.yml"
         fields: 
           - label: "About page data"
-            name: "about"
+            name: "about-body"
             widget: "markdown"
+
+  - label: "Products"
+    name: "products"
+    folder: "_products"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "product"
+      - label: "Product title"
+        name: "title"
+        widget: "string"
+      - label: "Product description"
+        name: "description"
+        widget: "string"
+      - label: "Product sizes"
+        name: "sizes"
+        widget: "list"
+        default: ["XS"]
+      - label: "Product colors"
+        name: "colors"
+        widget: "list"
+        default: ["black"]
+      - label: "Product price"
+        name: "price"
+        widget: "string"
+      - label: "Product categories"
+        name: "categories"
+        widget: "list"
+        default: ["shoes"]
+      - label: "Product tags"
+        name: "tags"
+        widget: "list"
+        default: ["new-arrival"]
+      - label: "Product image"
+        name: "image-url"
+        widget: "image"
+      - label: "Product long description"
+        name: "body"
+        widget: "markdown"
+        
   - label: "Messages"
     name: "messages"
     folder: "_messages"

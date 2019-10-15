@@ -4,5 +4,7 @@ layout: default
 
 <div class="wrapper">
   {% include paginator.html %}
-  {{content | markdownify }}
+  <div class="message-body">
+    {{content | markdownify }}
+  </div>
 </div>

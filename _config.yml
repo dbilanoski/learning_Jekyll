@@ -15,4 +15,6 @@ exclude: [".gitignore"]
 collections:
   messages:
     output: true
+  products:
+    output: true
   

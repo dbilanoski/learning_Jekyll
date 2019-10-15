@@ -1,8 +1,10 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Just+Another+Hand&display=swap');
 
-/* Color Scheme */
+
 :root {
+  /* Color Scheme */
   --white_lighter: #e8ecf7;
   --white_darker: #dce0ea;
   --grey: #474747;
@@ -11,4 +13,7 @@
   --red: #b2353f;
   --green: #23ce6b;
 
+  /* Typography */
+  --cursive: 'Just Another Hand', cursive;
 }
+

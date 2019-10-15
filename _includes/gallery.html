@@ -28,9 +28,9 @@
       <a 
         href="{{ item.path }}" 
         title="{{ itemName }}"
-        class="{% if gallerySize < 3 %}
+        class="{% if gallerySize < 2 %}
           col-12
-        {% elsif gallerySize >= 3 and gallerySize < 5 %}
+        {% elsif gallerySize >= 2 and gallerySize < 5 %}
           col-6 
         {% elsif gallerySize >= 5 and gallerySize < 9 %}
           col-4
@@ -38,7 +38,7 @@
           col-3
         {% endif %}
         ">
-         <img src="{{ item.path }}" alt="">
+         <img src="{{ item.path }}" alt="{{ itemName }}">
       </a>
       {% endif %}
     {% endif %}

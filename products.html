@@ -1,0 +1,34 @@
+---
+layout: default
+permalink: /products/
+title: Products
+---
+<div class="wrapper">
+
+{% assign categories = site.products | map: "categories" | uniq %}
+
+{% for category in categories %}
+  <h1 id="{{ category | slugify }}" class="mg-top_5">{{ category | capitalize }}</h1>
+  <div class="products flex-row mg-top_2">  
+    {% for product in site.products %} 
+      {% if product.categories[0] == category %}
+        <a class="col-4 product-card" href="{{ product.url }}" title="{{ product.description }}">
+          <div class="product-card-image">
+            <img src="{{ product.image-url }}" alt="{{ product.description }}">
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">{{ product.title }}</h3>
+            <p class="product-card-price">{{ product.price }}</p>
+            {% if product.tags contains "new-arrival" %}
+              <small class="product-card-labels">New Arrival</small>
+            {% else %}
+              <small>Regular</small>
+            {% endif %}
+          </div>
+      {% endif %}
+    {% endfor %}
+    </a>
+  </div>
+{% endfor %}
+
+</div>

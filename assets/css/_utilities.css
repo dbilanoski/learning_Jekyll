@@ -8,7 +8,12 @@
   height: 100%;
   margin: auto;
 }
-
+.wrapper-small {
+  width: 760px;
+  max-width: 90%;
+  height: 100%;
+  margin: auto;
+}
 /* Flex grid */
 .flex-row, .flex-column {
   display: flex;
@@ -77,13 +82,17 @@
   flex-basis: calc(100% / 12 * 12); 
  }
 
- div[class*="col"] + div[class*="col"] {
+ div[class*="col-"] + div[class*="col-"] {
    margin-left: 10px;
  }
 
  /* Spacers */
  .mg-top_2 {
    margin-top: 2rem;
+ }
+
+ .mg-top_5 {
+   margin-top: 5rem;
  }
 
  /* Pagination */

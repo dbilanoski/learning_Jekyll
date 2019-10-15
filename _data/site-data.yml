@@ -2,13 +2,17 @@
 title: Let's Test Jekyll
 description: Testing out Jekyll with Netlify CMS.
 
+# HERO
+hero-description: For you. For me.
+hero-image-url: /assets/img/covers/hero_bg_1.jpg
+
 # FOOTER
 address:
-  author: "John Doe" 
-  street-address: "7292 Dictum Av."
-  locality: "San Antonio MI 47096"
-  country: "USA"
+  author: John Doe
+  street-address: 7292 Dictum Av.
+  locality: San Antonio MI 47096
+  country: USA
 contact-data:
-  display-phone: "(492) 709-6392"
-  url-phone: "+124927096392"
-  web: "www.learnjekyll.example"
+  display-phone: (492) 709-6392
+  url-phone: +124927096392
+  web: www.learnjekyll.example

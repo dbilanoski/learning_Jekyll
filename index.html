@@ -1,23 +1,43 @@
 ---
 layout: default
 ---
+<section class="hero" style="background-image: url('{{ site.data.site-data.hero-image-url }}')">
+  <div class="hero-copy">
+    <h1 class="hero-title">&#8226 Polka Dots &#8226</h1>
+    <p class="hero-punchline">{{ site.data.site-data.hero-description }}<For/p>
+  </div>
+</section>
 <div class="wrapper">
-  <h1>HELLO WORLDS</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptate, officia sint maiores, excepturi mollitia magnam cum officiis, assumenda quam dicta fugiat. Eos architecto expedita dolores fuga eveniet ipsam, ut fugit voluptatem cupiditate possimus asperiores dolore inventore suscipit dignissimos alias vitae, commodi pariatur. Nemo, voluptatem. Quas odit magnam non labore.</p>
-
-  <div class="flex-row flex-centered img-grid mg-top_2">
-    <div class="col-3"><img src="https://picsum.photos/501/500" alt=""></div>
-    <div class="col-3"><img src="https://picsum.photos/500/502" alt=""></div>
-    <div class="col-3"><img src="https://picsum.photos/502/500" alt=""></div>
-    <div class="col-3"><img src="https://picsum.photos/500/501" alt=""></div> 
+  <section class="products-showcase mg-top_5">
+    <article class="flex-column flex-centered">
+      <h1>Clothing, Shoes & Accessories</h2>
+        <p class="hero-punchline">Finest the money can buy.</p>
+    </article>
+    <div class="products flex-row mg-top_5">
+      {% assign count = 0 %}  
+      {% for product in site.products %}
+      {% if count >= 3 %}
+        {% break %}
+      {% endif %}
+       {% if product.tags contains "new-arrival" %}
+        <a class="col-4 product-card" href="{{ product.url }}" title="{{ product.title }}">
+          <div class="product-card-image">
+            <img src="{{ product.image-url }}" alt="{{ product.description }}">
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title">{{ product.title }}</h3>
+            <p class="product-card-price">{{ product.price }}</p>
+              <small class="product-card-labels">New Arrival</small>  
+          </div>
+        </a>
+        {% assign count = count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
   </div>
-  <div class="flex-row flex-centered img-grid">
-    <div class="col-8"><img src="https://picsum.photos/1000/500" alt=""></div>
-    <div class="col-4"><img src="https://picsum.photos/500/500" alt=""></div>
-  </div>
-
+</section>
   <div class="flex-row mg-top_2">
-    <div class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci qui vel quo aliquid pariatur temporibus deleniti magni, provident nam, libero repellat illum ipsum consequuntur rerum inventore amet modi praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci qui vel quo aliquid pariatur temporibus deleniti magni, provident nam, libero repellat illum ipsum consequuntur rerum inventore amet modi praesentium?</div>
-    <div class="col-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tempora similique a repudiandae placeat, perferendis, possimus, eligendi nesciunt corrupti optio expedita! Minus necessitatibus, exercitationem provident voluptas eius sed laborum delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci qui vel quo aliquid pariatur temporibus deleniti magni, provident nam, libero repellat illum ipsum consequuntur rerum inventore amet modi praesentium?</div>
+      <div class="col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci qui vel quo aliquid pariatur temporibus deleniti magni, provident nam, libero repellat illum ipsum consequuntur rerum inventore amet modi praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci qui vel quo aliquid pariatur temporibus deleniti magni, provident nam, libero repellat illum ipsum consequuntur rerum inventore amet modi praesentium?</div>
+      <div class="col-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tempora similique a repudiandae placeat, perferendis, possimus, eligendi nesciunt corrupti optio expedita! Minus necessitatibus, exercitationem provident voluptas eius sed laborum delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci qui vel quo aliquid pariatur temporibus deleniti magni, provident nam, libero repellat illum ipsum consequuntur rerum inventore amet modi praesentium?</div>
+      </div>
+    </div>
   </div>
-</div>
