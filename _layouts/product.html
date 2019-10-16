@@ -16,7 +16,7 @@ layout: default
         <select>
           <option value="" disabled selected>Select color</option>
           {% for color in page.colors %}
-            <option>{{ color }}</option>
+            <option>{{ color | capitalize  }}</option>
           {% endfor %}
         </select>
       </div>
@@ -24,7 +24,7 @@ layout: default
         <select>
           <option value="" disabled selected>Select size</option>
           {% for size in page.sizes %}
-            <option>{{ size }}</option>
+            <option>{{ size | upcase }}</option>
           {% endfor %}
         </select>
       <div class="product-info">
